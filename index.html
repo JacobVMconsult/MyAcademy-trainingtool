@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyAcademy Tools | De Mobiliteitsmakelaar</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f0f4f8;color:#1a1a1a;min-height:100vh;display:flex;flex-direction:column}
+
+/* Topbar */
+.topbar{background:#1F3864;color:#fff;padding:16px 32px;display:flex;align-items:center;gap:16px}
+.topbar-logo{font-size:20px;font-weight:700;letter-spacing:.3px}
+.topbar-logo span{color:#BDD7EE;font-weight:400;font-size:14px;margin-left:10px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#1F3864 0%,#2E75B6 100%);color:#fff;padding:56px 32px 48px;text-align:center}
+.hero h1{font-size:28px;font-weight:700;margin-bottom:10px}
+.hero p{font-size:15px;color:rgba(255,255,255,.8);max-width:520px;margin:0 auto}
+
+/* Cards grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;padding:40px 32px;max-width:1100px;margin:0 auto;width:100%}
+
+.card{background:#fff;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(0,0,0,.13)}
+
+.card-top{padding:28px 24px 20px;flex:1}
+.card-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px}
+.card-title{font-size:17px;font-weight:700;margin-bottom:6px}
+.card-desc{font-size:13px;color:#666;line-height:1.6}
+
+.card-meta{padding:14px 24px;border-top:1px solid #f0f0f0;display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:3px 9px;border-radius:20px;font-weight:600;border:1px solid}
+
+.card-footer{padding:16px 24px;border-top:1px solid #f0f0f0}
+.btn{display:block;text-align:center;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;transition:opacity .15s}
+.btn:hover{opacity:.88}
+
+/* Tool 1 - Rollen */
+.c1 .card-icon{background:#E6F1FB}
+.c1 .card-title{color:#1F3864}
+.c1 .btn{background:#1F3864;color:#fff}
+.c1 .tag{background:#E6F1FB;color:#185FA5;border-color:#BDD7EE}
+
+/* Tool 2 - Technisch */
+.c2 .card-icon{background:#E6F1FB}
+.c2 .card-title{color:#1F3864}
+.c2 .btn{background:#2E75B6;color:#fff}
+.c2 .tag{background:#E6F1FB;color:#185FA5;border-color:#BDD7EE}
+
+/* Tool 3 - Non-Technisch */
+.c3 .card-icon{background:#EBF3E3}
+.c3 .card-title{color:#375623}
+.c3 .btn{background:#375623;color:#fff}
+.c3 .tag{background:#EBF3E3;color:#375623;border-color:#c6e0b4}
+
+/* Info strip */
+.info{background:#fff;border-top:1px solid #e0e6f0;padding:24px 32px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;font-size:12px;color:#888}
+.info-item{display:flex;align-items:center;gap:6px}
+.info-dot{width:8px;height:8px;border-radius:50%}
+
+/* Footer */
+footer{background:#1F3864;color:rgba(255,255,255,.5);text-align:center;padding:16px 32px;font-size:12px;margin-top:auto}
+footer strong{color:rgba(255,255,255,.8)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-logo">De Mobiliteitsmakelaar <span>MyAcademy Tools</span></div>
+</div>
+
+<div class="hero">
+  <h1>&#127891; MyAcademy Zoektools</h1>
+  <p>Doorzoek gebruikers, rollen en trainingen uit MyAcademy &#8212; per medewerker, per vestiging, per programma.</p>
+</div>
+
+<div class="grid">
+
+  <!-- Tool 1: Rollen -->
+  <div class="card c1">
+    <div class="card-top">
+      <div class="card-icon">&#128101;</div>
+      <div class="card-title">Rollen per Gebruiker</div>
+      <div class="card-desc">Overzicht van alle gebruikers en hun toegewezen rollen per dealernummer en merk. Zoek op naam, ID, functietitel of matricule.</div>
+    </div>
+    <div class="card-meta">
+      <span class="tag">270 gebruikers</span>
+      <span class="tag">5 vestigingen</span>
+      <span class="tag">Hoofd- & Deelfuncties</span>
+    </div>
+    <div class="card-footer">
+      <a class="btn" href="https://jacobvmconsult.github.io/My-academy-rollen/MyAcademy_Rollen_Zoektool.html">Openen &#8594;</a>
+    </div>
+  </div>
+
+  <!-- Tool 2: Technische Trainingen -->
+  <div class="card c2">
+    <div class="card-top">
+      <div class="card-icon">&#128295;</div>
+      <div class="card-title">Technische Trainingen</div>
+      <div class="card-desc">Verplichte technische trainingsprogramma's per medewerker. Zie per training de status, uren, registratiedatum en certificering.</div>
+    </div>
+    <div class="card-meta">
+      <span class="tag">82 medewerkers</span>
+      <span class="tag">Technisch</span>
+      <span class="tag">&#127891; Event &nbsp; &#128187; e-Learning</span>
+    </div>
+    <div class="card-footer">
+      <a class="btn" href="https://jacobvmconsult.github.io/MyAcademy-trainingtool/">Openen &#8594;</a>
+    </div>
+  </div>
+
+  <!-- Tool 3: Non-Technische Trainingen -->
+  <div class="card c3">
+    <div class="card-top">
+      <div class="card-icon">&#127775;</div>
+      <div class="card-title">Non-Technische Trainingen</div>
+      <div class="card-desc">Verplichte niet-technische trainingsprogramma's per medewerker. Competenties, soft skills en merktrainingen per vestiging.</div>
+    </div>
+    <div class="card-meta">
+      <span class="tag">99 medewerkers</span>
+      <span class="tag">Non-Technisch</span>
+      <span class="tag">&#127891; Event &nbsp; &#128187; e-Learning</span>
+    </div>
+    <div class="card-footer">
+      <a class="btn" href="https://jacobvmconsult.github.io/MyAcademy-trainingtool/MyAcademy_NonTechnische_Trainingen_Zoektool.html">Openen &#8594;</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="info">
+  <div class="info-item"><div class="info-dot" style="background:#2E75B6"></div> Data: 12-08-2026</div>
+  <div class="info-item"><div class="info-dot" style="background:#28a745"></div> Sleep een nieuw Excel-rapport op de tool om data bij te werken</div>
+  <div class="info-item"><div class="info-dot" style="background:#e6a817"></div> D'Ieteren MyAcademy &mdash; Deckx-Team / De Mobiliteitsmakelaar</div>
+</div>
+
+<footer>
+  <strong>De Mobiliteitsmakelaar</strong> &mdash; MyAcademy Tools &mdash; Intern gebruik
+</footer>
+
+</body>
+</html>
